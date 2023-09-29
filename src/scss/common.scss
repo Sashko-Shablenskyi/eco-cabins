@@ -1,0 +1,33 @@
+.title {
+  font-family: 'Merriweather';
+  font-size: toRem(30);
+  font-weight: 900;
+}
+
+.btn {
+  display: inline-flex;
+  align-self: flex-start;
+  padding: toRem(9) toRem(20.5);
+  background-color: #fff;
+  border-radius: toRem(4);
+  font-size: toRem(12);
+  font-weight: 500;
+  color: var(--semi-color);
+  border: 1px solid #fff;
+  transition: all 0.3s;
+
+  @media (any-hover: hover) {
+    &:hover {
+      color: #fff;
+      background-color: transparent;
+    }
+  }
+
+  &--transparent {
+    background-color: transparent;
+    border-color: var(--light-color);
+  }
+}
+
+// .logo {
+// }

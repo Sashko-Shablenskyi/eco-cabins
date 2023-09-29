@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="en">
+  @@include('html/_head.htm',{ "title":"Eco cabins" })
+  <body>
+    <div class="wrapper">
+      @@include('html/_header.htm',{})
+      <main class="page">
+        <section class="hero">
+          <div class="hero__container">
+            <div class="hero__left">
+              <div class="hero__label">Duurzame tiny huisjes</div>
+              <div class="title hero__title">
+                Een ecologisch tiny huisje is zoveel mogelijk opgebouwd uit
+                duurzame natuurlijke materialen
+              </div>
+            </div>
+
+            <button class="hero__btn">
+              <div class="hero__btn-circle">
+                <img src="@img/hero/btn_play.svg" alt="btn_play" />
+              </div>
+              Bekijk de film
+            </button>
+          </div>
+        </section>
+        <section class="materials">
+          <div class="materials__container">
+            <div class="materials__left">
+              <div class="title materials__title">Duurzame materialen</div>
+              <div class="materials__descr">
+                Alle EcoCabins hebben een hoge isolatiewaarde, worden
+                geproduceerd met indien mogelijk duurzame en/of natuurlijke
+                materialen en hebben als opvallende uiterlijke kenmerk de ‘ronde
+                hoeken’, mogelijk gemaakt door het specifieke materiaalgebruik.
+                De voordelen van bouwen met hout zijn legio: hout is licht,
+                flexibel, isoleert goed en bouwt snel en efficiënt.
+              </div>
+              <div class="materials__btn btn btn--transparent">Lees meer</div>
+            </div>
+
+            <div class="materials__slider swiper">
+              <div class="materials__wrapper swiper-wrapper">
+                <div class="materials__slide swiper-slide">
+				  <img src="@img/materials/slide_01.jpg"" alt="slide_01">
+                </div>
+				<div class="materials__slide swiper-slide">
+				  <img src="@img/materials/slide_01.jpg"" alt="slide_02">
+                </div>
+				<div class="materials__slide swiper-slide">
+				  <img src="@img/materials/slide_01.jpg"" alt="slide_03">
+                </div>
+				<div class="materials__slide swiper-slide">
+				  <img src="@img/materials/slide_01.jpg"" alt="slide_04">
+                </div>
+				<div class="materials__slide swiper-slide">
+				  <img src="@img/materials/slide_01.jpg"" alt="slide_05">
+                </div>
+                
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="innovation"></section>
+        <section class="about"></section>
+      </main>
+
+      @@include('html/_footer.htm',{})
+    </div>
+    @@include('html/_js.htm',{})
+  </body>
+</html>

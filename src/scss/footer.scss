@@ -1,0 +1,42 @@
+//====================================================================================================
+.footer {
+  background-color: var(--dark-clor);
+  color: #fff;
+  padding: toRem(33) toRem(0);
+  &__container {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+    column-gap: toRem(35);
+    row-gap: toRem(25);
+    max-width: toRem(900);
+
+    @media (min-width: $mobileSmall) {
+      flex-direction: row;
+    }
+  }
+
+  &__address {
+    white-space: nowrap;
+  }
+
+  &__links {
+    display: flex;
+    flex-wrap: wrap;
+    row-gap: toRem(10);
+    column-gap: toRem(30);
+    justify-content: center;
+  }
+
+  &__logo {
+    @media (min-width: $mobile) {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+  }
+}
+//====================================================================================================
